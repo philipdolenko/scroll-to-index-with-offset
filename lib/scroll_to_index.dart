@@ -2,7 +2,7 @@
 //History: Tue Apr 24 09:17 CST 2019
 // Author: Jerry Chen
 
-library scroll_to_index;
+library scroll_to_index_with_offset;
 
 import 'dart:async';
 import 'dart:math' as math;
@@ -70,7 +70,7 @@ abstract class AutoScrollController implements ScrollController {
 
   /// scroll to the giving index
   Future scrollToIndex(int index, {Duration duration: scrollAnimationDuration,
-    AutoScrollPosition preferPosition, double offset});
+    AutoScrollPosition preferPosition, double offset = 0.0});
   /// highlight the item
   Future highlight(int index, {bool cancelExistHighlights: true,
     Duration highlightDuration: _highlightDuration, bool animated: true});
@@ -192,7 +192,7 @@ mixin AutoScrollControllerMixin on ScrollController implements AutoScrollControl
   static const maxBound = 30; // 0.5 second if 60fps
   @override
   Future scrollToIndex(int index, {Duration duration: scrollAnimationDuration,
-    AutoScrollPosition preferPosition, double offset}) async {
+    AutoScrollPosition preferPosition, double offset = 0.0}) async {
     return co(this, () => _scrollToIndex(index, duration: duration, preferPosition: preferPosition, customOffset: offset));
   }
 

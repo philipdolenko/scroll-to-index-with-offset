@@ -81,12 +81,12 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.7.0"
-  scroll_to_index:
+  scroll_to_index_with_offset:
     dependency: "direct main"
     description:
-      path: ".."
-      relative: true
-    source: path
+      name: scroll_to_index_with_offset
+      url: "https://pub.dartlang.org"
+    source: hosted
     version: "1.0.6"
   sky_engine:
     dependency: transitive

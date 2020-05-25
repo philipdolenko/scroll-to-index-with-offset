@@ -23,3 +23,6 @@
 
 **1.0.6**
 * support animated highlight
+
+**1.0.7**
+* support scrolling with offset

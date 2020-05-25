@@ -1,8 +1,8 @@
-name: scroll_to_index
+name: scroll_to_index_with_offset
 description: scroll to the index of any scrollable widget in Flutter
-version: 1.0.6
-author: Jerry Chen <b80203@gmail.com>
-homepage: https://github.com/quire-io/scroll-to-index
+version: 1.0.7
+author: Philip Dolenko <ph.dolenko@gmail.com>
+homepage: https://github.com/philipdolenko/scroll-to-index-with-offset
 environment:
   sdk: ">=2.1.0 <3.0.0"
 

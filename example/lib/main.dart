@@ -5,7 +5,7 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:scroll_to_index/scroll_to_index.dart';
+import 'package:scroll_to_index_with_offset/scroll_to_index.dart';
 
 void main() => runApp(MyApp());
 
@@ -83,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
         counter = 0;
     });
 
-    await controller.scrollToIndex(counter, preferPosition: AutoScrollPosition.begin);
+    await controller.scrollToIndex(counter, preferPosition: AutoScrollPosition.begin, offset: -50);
     controller.highlight(counter);
   }
 

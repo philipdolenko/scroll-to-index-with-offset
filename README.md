@@ -1,4 +1,4 @@
-# scroll-to-index
+# scroll-to-index-with-offset
 
 This package provides the scroll to index mechanism for fixed/variable row height for Flutter scrollable widget.
 
@@ -9,13 +9,13 @@ In the `pubspec.yaml` of your flutter project, add the following dependency:
 ```yaml
 dependencies:
   ...
-  scroll_to_index: any
+  scroll_to_index_with_offset: any
 ```
 
 In your library add the following import:
 
 ```dart
-import 'package:scroll_to_index/scroll_to_index.dart';
+import 'package:scroll_to_index_with_offset/scroll_to_index.dart';
 ```
 
 For help getting started with Flutter, view the online [documentation](https://flutter.io/).
@@ -61,7 +61,7 @@ with the `AutoScrollController` controller.
 when you need to trigger scroll to a specified index, you can call
 
 ```
-controller.scrollToIndex(index, preferPosition: AutoScrollPosition.begin)
+controller.scrollToIndex(index, preferPosition: AutoScrollPosition.begin, offset: 0) //Offset is optional 
 ```
 
 even more, with a fixed row height, you can give it a suggested height for more efficient scrolling. there are more configuration.
@@ -80,9 +80,3 @@ final controller = AutoScrollController(
   suggestedRowHeight: 200
 );
 ```
-
-for full example, please see this [Demo](https://github.com/quire-io/scroll-to-index/blob/master/example/lib/main.dart).
-
-## Who Uses
-
-* [Quire](https://quire.io) - a simple, collaborative, multi-level task management tool.
